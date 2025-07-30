@@ -213,7 +213,7 @@ class AlienInvasion:
         alien_width, alien_height = alien.rect.size
         alien.x = alien_width + 2 * alien_width * alien_number
         alien.rect.x = alien.x
-        alien.rect.y = alien_height + 2 * alien_height * row_number
+        alien.rect.y = 50 + alien_height + 2 * alien_height * row_number # 50px space is added from top of the screen
         self.aliens.add(alien)
 
     def _check_fleet_edges(self):
